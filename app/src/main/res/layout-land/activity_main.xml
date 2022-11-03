@@ -4,31 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:gravity="center"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:onClick="zwieksz"
-        app:srcCompat="@drawable/gora" />
+        app:srcCompat="@drawable/lewo" />
 
     <TextView
         android:id="@+id/licznikTekst"
         android:layout_width="wrap_content"
         android:layout_height="170dp"
+        android:layout_weight="2"
         android:gravity="center"
         android:text="0"
         android:textSize="100sp" />
 
     <ImageView
         android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:onClick="zmniejsz"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/dol"
+        app:srcCompat="@drawable/prawo"
         tools:ignore="UsingOnClickInXml" />
 
 </LinearLayout>
